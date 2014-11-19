@@ -1,4 +1,4 @@
-
+	
 EvalMSA
 =======
 
@@ -18,9 +18,9 @@ The program interacts with the R statistical language in order to print the resu
 When running the program, the user must introduce some data:
 * **MSA file path**. If the file is located in the same directory where the program is executing just the name of the file is necessary. The program only accepts FASTA format files.
 * **Scoring matrix file path.** If the file is located in the same directory where the program is executing just the name of the file is necessary. The file must be a plain-text file, with the information displayed as showed:
-
-       A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V
-    A  4 -1 -2 -2  0 -1 -1  0 -2 -1 -1 -1 -1 -2 -1  1  0 -3 -2  0 
+```
+   A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V
+A  4 -1 -2 -2  0 -1 -1  0 -2 -1 -1 -1 -1 -2 -1  1  0 -3 -2  0
 R -1  5  0 -2 -3  1  0 -2  0 -3 -2  2 -1 -3 -2 -1 -1 -3 -2 -3
 N -2  0  6  1 -3  0  0  0  1 -3 -3  0 -2 -3 -2  1  0 -4 -2 -3    
 D -2 -2  1  6 -3  0  2 -1 -1 -3 -4 -1 -3 -3 -1  0 -1 -4 -3 -3    
@@ -40,7 +40,7 @@ T  0 -1  0 -1 -1 -1 -1 -2 -2 -1 -1 -1 -1 -2 -1  1  5 -2 -2  0
 W -3 -3 -4 -4 -2 -2 -3 -2 -2 -3 -2 -3 -1  1 -4 -3 -2 11  2 -3    
 Y -2 -2 -2 -3 -2 -1 -2 -3  2 -1 -1 -2 -1  3 -3 -2 -2  2  7 -1    
 V  0 -3 -3 -3 -1 -2 -2 -3 -3  3  1 -2  1 -1 -2 -2  0 -3 -1  4
-
+```
 	Pay attention to the fact that each row (except the first one) started with the abbreviation of the corresponding aminoacid or nucleotide. Besides, the white spaces between each numeric vale are important (2 spaces before positive values and 1 before negative ones). In case of having any doubt, just examine the scoring matrix files provided with this material.
 
 * **Reference sequences (outgroups).** Name of the sequences that the program must obviate in the analysis, separated by commas. By default, none sequence is set.
