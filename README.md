@@ -4,12 +4,12 @@ EvalMSA
 A perl-based application to evaluate multiple sequence alignments
 
 ##What is this tool used for?
-	In a multiple sequence alignment (MSA) sometimes appear sequences that phylogenetically diverge markedly from the rest. Those sequences can influence negative on the MSA. This tool evaluate the alignment by means of determining the weight each sequence have over the quality of the whole MSA.
-	In short alignments is easy to identify those divergent sequences. They may stand out from the others for having a high number of gaps, inducing more gaps in the rest of sequences or having mismatches.
-	This tool not only scores specifically each sequence, but also identifies those who induce more gaps in the others and those having higher number of gaps.
+In a multiple sequence alignment (MSA) sometimes appear sequences that phylogenetically diverge markedly from the rest. Those sequences can influence negative on the MSA. This tool evaluate the alignment by means of determining the weight each sequence have over the quality of the whole MSA.
+In short alignments is easy to identify those divergent sequences. They may stand out from the others for having a high number of gaps, inducing more gaps in the rest of sequences or having mismatches.
+This tool not only scores specifically each sequence, but also identifies those who induce more gaps in the others and those having higher number of gaps.
 	
 ##Prerequisites
-	The program interacts with the R statistical language in order to print the results.  We should have installed the R modules needed for graphic representations to have the results presented properly.
+The program interacts with the R statistical language in order to print the results.  We should have installed the R modules needed for graphic representations to have the results presented properly.
 
 ##Usage instructions
 ###Input Data
@@ -17,6 +17,7 @@ A perl-based application to evaluate multiple sequence alignments
 When running the program, the user must introduce some data:
 1. MSA file path. If the file is located in the same directory where the program is executing just the name of the file is necessary. The program only accepts FASTA format files.
 2. Scoring matrix file path. If the file is located in the same directory where the program is executing just the name of the file is necessary. The file must be a plain-text file, with the information displayed as showed:
+
 “
    A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V   
 A  4 -1 -2 -2  0 -1 -1  0 -2 -1 -1 -1 -1 -2 -1  1  0 -3 -2  0 
@@ -66,7 +67,7 @@ ARGUMENTS:
 If the optional arguments are not specified, the program will use the default values.
 
 ###Output Data
-	Before the execution, three different files are created
+Before the execution, three different files are created
 MSA_file_results.txt: Include the pre-analisys data, the alignment analisys data and the potential errors.
 Pre-analisys: Shows the average, median, standard deviation, quartiles, percentiles and the outliers taking as data the original length of the sequences.
 Alignment analisys: Shows information related with SP method and the alignment score calculated. Points out the less scored sequence in the alignment, the sequence with higher number of gaps and the sequence who induces more gaps in the rest of the sequences. 
